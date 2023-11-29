@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JUST 쇼핑몰</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <header id = "header" class = "clearfix">
+                <li class = "logo"><a href="#"><img src="images/logo.png" alt="JUST 쇼핑몰 로고"></a></li>
+                <div class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">탑</a>
+                            <ul class = "submenu">
+                                <li><a href="#">블라우스</a></li>
+                                <li><a href="#">티</a></li>
+                                <li><a href="#">셔츠</a></li>
+                                <li><a href="#">니트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">아우터</a>
+                            <ul class = "submenu">
+                                <li><a href="#">쟈켓</a></li>
+                                <li><a href="#">코드</a></li>
+                                <li><a href="#">가디건</a></li>
+                                <li><a href="#">머플러</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">팬츠</a>
+                            <ul class = "submenu">
+                                <li><a href="#">청바지</a></li>
+                                <li><a href="#">짧은바지</a></li>
+                                <li><a href="#">긴바지</a></li>
+                                <li><a href="#">레깅스</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">악세서리</a>
+                            <ul class = "submenu">
+                                <li><a href="#">귀고리</a></li>
+                                <li><a href="#">목걸이</a></li>
+                                <li><a href="#">반지</a></li>
+                                <li><a href="#">팔찌</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div id = "banner">
+                <li><a href="#"><img src="images/slide01.png" alt="슬라이드 이미지1"></a></li>
+            </div>
+            
+            <div id = "content" class = "clearfix">
+                <div class="na" class = "clearfix">
+                    <div class = "tab">
+                        <ul class = "tabmenu">
+                            <li class = "active"><a href="#">공지사항</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                        <div class="tabItem" class = "clearfix">
+                            <ul class ="notice">
+                                <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용<span>공지사항날짜</span></a></li>
+                                <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용<span>공지사항날짜</span></a></li>
+                                <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용<span>공지사항날짜</span></a></li>
+                                <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용<span>공지사항날짜</span></a></li>
+                            </ul>
+                            <ul class ="gallery">
+                                <li><a href="#"><img src="images/gallery01.png" alt="갤러리1"></a></li>
+                                <li><a href="#"><img src="images/gallery02.png" alt="갤러리2"></a></li>
+                                <li><a href="#"><img src="images/gallery03.png" alt="갤러리3"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "banner">
+                        <li><a href="#"><img src="images/banner.png" alt="배너"></a></li>
+                    </div>
+
+                    <div class = "link">
+                        <li><a href="#"><img src="images/link.png" alt="바로가기"></a></li>
+                    </div>
+                </div>
+            </div>
+
+            <footer id = "footer">
+                <li class = "f_logo"><a href="#"><img src="images/footer_logo.png" alt="JUST 쇼핑몰 로고"></a></li>
+                <p>Copylight All rights reserved JUST 쇼핑몰</p>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="images/facebook.webp" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="images/instagram.webp" alt="인스타"></a></li>
+                        <li><a href="#"><img src="images/twitter.webp" alt="트위터"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script/jquery.min.js"></script>
+        <script src="script/custom.js"></script>
+        <script>
+            $(".nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop().slideDown();
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop().slideUp();
+            })
+        </script>
+    </body>
+</html>

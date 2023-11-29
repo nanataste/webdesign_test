@@ -1,0 +1,85 @@
+* {margin: 0; padding: 0;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+.clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+#hearder {width: 100%;}
+#hearder h1 {float: left; margin-top: 25px;}
+#hearder .nav {float: right; margin-top: 20px;}
+#hearder .nav ul { float: right; }
+#hearder .nav ul li { float:left; position: relative;}
+#hearder .nav ul li a { font-size: 24px; padding: 20px 25px; display: block;}
+#hearder .nav ul li:hover {background: rgb(82, 253, 148);}
+/* #header .nav ul li ul.submenu {display: none;  position: absolute; left: 0; top: 44px;  height: 176px; padding-left: 0; background: #b39ddb;}
+#header .nav ul li:first-child ul.submenu:after {content: '';position: absolute; left:ㅇ -480px; top: 0; width: 480px; height: 176px; background-color: #b39ddb;}
+#header .nav ul li ul.submenu li {width: 100%;} */
+.submenu { position: absolute; left: 0; top: 70px; height: 125px;  z-index: 500;}
+.submenu li {background: rgb(144, 236, 151); display: block;  width: 100%; z-index: 500;}
+.submenu li a {display: block; text-align: center; font-size: 15px; padding: 10px; z-index: 500;}
+
+.submenu::after {content: ''; position: absolute; left: -665px; top: 0px; width: 788px; height: 125px; background: rgb(144, 236, 151); z-index: 10;}
+/* .submenu li a {display: block;} */
+/* .submenu li  {display: block;} */
+
+/* .submenu li {width: 100%;} */
+/* #header .nav ul li ul.submenu {display: none;} */
+/* #header .nav ul li ul {display: none;} */
+/* #header .nav ul {display: none;} */
+/* #header .nav ul li ul li {width: 100%; border-right: 0;} */
+/* #header .nav ul li ul li a {z-index: 501;} */
+
+#slide {width: 100%; overflow: hidden; height: 300px;}
+.slideList {position: relative;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg li a img {width: 100%; display: block;}
+.slideList .slideImg h3 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 30px; border-radius: 25px; color: #fff;}
+
+#content {width: 100%; height: 300px;}
+#content .tab {width: 33.3333%; float: left; height: 200px; margin-top: 15px;} 
+#content .tab ul li {display: block; margin-top: 10px;}
+/* #content .tab ul li:hover {background-color:rgb(82, 253, 148);} */
+#content .tab ul li:hover {background-color:rgb(82, 253, 148);}
+/* 다 같이 백그라운드 색 변경되어야 되는데 안됨 a말고 li에 하고 싶다고*/
+/* 해결함 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ기모찌이잉잉ㅇ이이이잉*/
+#content .tab ul li a:hover {background-color:rgb(82, 253, 148);}
+#content .tab ul li a {float: left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 50%;}
+#content .tab ul span {float: right; }
+
+#content .gallery {width: 33.3333%; float: left; height: 200px; margin-top: 15px;}
+#content .gallery a {}
+#content .gallery a h2 {}
+#content .gallery ul {}
+#content .gallery ul li {float: left; margin: 1.5%;}
+#content .gallery ul li:last-child {margin-right: 0%;}
+#content .gallery ul li a {}
+#content .gallery ul li a img {width: 120px;height: 120px;}
+
+#content .banner {width: 33.3333%; float: left; height: 200px;}
+#content .banner img {height: 200px;}
+
+#footer {width: 100%; height: 100px;}
+#footer .f {padding-top: 30px;}
+#footer .f  li {float: left; }
+#footer .f  li a {}
+#footer .f li a img {}
+
+#footer .f p {float: left;  padding-left: 280px;}
+
+#footer .f select {float: right; margin-right: 30px; }
+/* #footer li {padding-top: 20px;}
+#footer li a {}
+#footer li a img {}
+
+#footer p {text-align: center; }
+
+#footer select {float: right; margin-top: -20px;} */
+
+.layer { z-index: 1000;display: none; width: 600px; height: 160px; border: 2px solid #ccc; position: relative; left: 35%; bottom: 400px; background-color: #fff;}
+.layer h2 {text-align: center; margin-top: 10px;}
+.layer h3 {text-align: center; margin-top: 35px; color: #888;}
+.layer li {position: absolute; left: 90%;top: 80%; background-color: #999; border: 1px solid #111; }
+
+.layer-bg {z-index: 999; display: none; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); position: fixed; left: 0; top: 0; }
